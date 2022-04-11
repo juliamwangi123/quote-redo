@@ -62,7 +62,7 @@ li{
     font-weight: bold;
 }
 .votes{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     height: 20%;
     margin-top: 10px;
@@ -76,7 +76,7 @@ li{
 }
 
 .one i:nth-child(2){
-    margin-left: 35px;
+    margin-left: 15px;
 }
 
 .two button {
@@ -91,6 +91,7 @@ li{
     border: 2px solid silver;
     background-color:rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(16px);
+    justify-content: center;
 }
 
 .generate{
@@ -101,8 +102,8 @@ li{
     margin-left: 15px;
     border-radius: 25px;
 }
+app-quote-details{
 
-app-quotedetails{
     height: 5%;
     margin-top: 10px;
     

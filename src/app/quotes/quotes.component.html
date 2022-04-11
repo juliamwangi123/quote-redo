@@ -36,7 +36,7 @@
                     <div class="votes">
                         <div class="one">
                         {{item.upCounter}}<i class="bi bi-hand-thumbs-up" (click)="upVote(i)"></i>
-                        {{item.downCounter}}<i class="bi bi-hand-thumbs-down" (click)="downVote(i)"></i>
+                        <i class="bi bi-hand-thumbs-down" (click)="downVote(i)"></i>{{item.downCounter}}
                         </div>
                         <div class="two">
                             <button (click)="deleteQuote(i)"><i class="bi bi-trash"></i></button>
@@ -50,13 +50,13 @@
                        
                 </ul>
 
-   
+               
        </div>
-
-       <div class="col-6 col-md-6" class="form" *ngIf="toDisplay"> 
-         <app-form  (createQuote)="customQuote($event)" ></app-form>
-    
-    </div>
+       <div class="col-6 col-md-5" class="form" *ngIf="toDisplay"> 
+        <app-form  (createQuote)="customQuote($event)" ></app-form>
+   
+   </div>
+      
 </div>
           <button type="button" class="btn btn-primary btn-lg" (click)= "toggleShow()" class="generate">Genarate Quote</button>
 
