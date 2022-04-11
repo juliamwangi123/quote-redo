@@ -94,7 +94,7 @@ li{
     border: 2px solid silver;
     background-color:rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(16px);
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
     width: 25%;
 }
