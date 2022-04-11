@@ -15,5 +15,7 @@ form h4{
     right: 1%;
     background-color: red;
     cursor: pointer;
+    width: 20px;
+    text-align: center;
 }
 
