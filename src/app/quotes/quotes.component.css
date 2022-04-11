@@ -72,6 +72,7 @@ li{
 .one{
     display: flex;
     justify-content:center;
+    cursor: pointer;
     
 }
 
@@ -81,8 +82,10 @@ li{
 
 .two button {
     background-color:  #edf6f9;
-    margin-top: 20px;
-    border:none
+    margin-top: 10px;
+    border:none;
+    position: absolute;
+    right: 3%;
 }
 
 .form{
