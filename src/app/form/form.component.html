@@ -8,17 +8,25 @@
     <h4>Generate Quote</h4>
   <div class="mb-1" >
       <label for="exampleFormControlInput1" class="form-label">Publisher</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name.." name="publisher" [(ngModel)]="newquote.publisher" required>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name.." #name= ngModel name="publisher" [(ngModel)]="newquote.publisher" required>
+      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+        <p>Name is required</p>
+      </div>
     </div>
     
     <div class="mb-1">
       <label for="exampleFormControlTextarea1" class="form-label">Quote</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="quote" id="" cols="10" rows="5"  #quote="ngModel" [(ngModel)]="newquote.quote" required></textarea>
+      <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+        <p>Can't be  left Empty</p>
+      </div>
     </div>
     <div class="mb-1" >
       <label for="exampleFormControlInput1" class="form-label">Author</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Author.." name="author" [(ngModel)]="newquote.author" required>
-  
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Author.." #author =ngModel name="author" [(ngModel)]="newquote.author" required>
+      <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+        <p>Name is required</p>
+      </div>
     </div>
   
     <div class="mb-1" class="btnCreate">
