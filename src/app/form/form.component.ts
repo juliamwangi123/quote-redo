@@ -8,6 +8,14 @@ import{Quotes} from '../quotes'
 export class FormComponent implements OnInit {
 
   newquote = new Quotes("","","",0, 0, new Date());
+  @Output() createQuote = new EventEmitter<Quotes>();
+
+
+
+
+  custom(){
+    this.createQuote.emit(this.newquote);
+      }
 
   constructor() { }
 
