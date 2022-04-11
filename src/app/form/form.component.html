@@ -8,16 +8,16 @@
     <h4>Generate Quote</h4>
   <div class="mb-1" >
       <label for="exampleFormControlInput1" class="form-label">Publisher</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name.." name="publisher" [(ngModel)]="newquote.publisher">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name.." name="publisher" [(ngModel)]="newquote.publisher" required>
     </div>
     
     <div class="mb-1">
       <label for="exampleFormControlTextarea1" class="form-label">Quote</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="quote" id="" cols="10" rows="5"  #quote="ngModel" [(ngModel)]="newquote.quote"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="quote" id="" cols="10" rows="5"  #quote="ngModel" [(ngModel)]="newquote.quote" required></textarea>
     </div>
     <div class="mb-1" >
       <label for="exampleFormControlInput1" class="form-label">Author</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Author.." name="author" [(ngModel)]="newquote.author">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Author.." name="author" [(ngModel)]="newquote.author" required>
   
     </div>
   
