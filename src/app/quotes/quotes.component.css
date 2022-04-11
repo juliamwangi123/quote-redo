@@ -31,7 +31,6 @@ li{
     animation:shadows 2s linear infinite alternate;
     height: 75vh;
     width: 40%;
-    background-color: red;
 }
 
 @keyframes shadows {
