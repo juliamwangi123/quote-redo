@@ -1,6 +1,8 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.Its a website that allow usders to post quotes , author, name of the user and shows the date when the quote got  posted  and also allows the user to delete the quote
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.Its a website that allow usders to post quotes , author, name of the user and shows the date when the quote got  posted  and also allows the user to delete the quote.
+
+![This is an image](/assets/images/ss.png)
 
 ## Installation.
 1. Fork the repository from my git hub.
