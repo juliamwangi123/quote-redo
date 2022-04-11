@@ -1,0 +1,12 @@
+.display{
+  
+    background-color: aliceblue;
+    text-align: center;
+    font-style: oblique;
+
+
+}
+
+.display p::before{
+    content: "-";
+}

@@ -71,7 +71,12 @@ li{
 
 .one{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
+    
+}
+
+.one i:nth-child(2){
+    margin-left: 35px;
 }
 
 .two button {
