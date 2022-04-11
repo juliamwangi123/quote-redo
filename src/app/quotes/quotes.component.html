@@ -5,7 +5,6 @@
 <div class="row">
 
     <div class=" col-12  col-sm -8 col-md-8 quotes" >
-        <!-- <div class="innerContainer"> -->
                 <ul   *ngFor="let item of quotes; let i = index"  class="col-4 innerContainer"  >
                    
                 
@@ -33,7 +32,7 @@
             
                     
                 
-<!-- 
+
                     <div class="votes">
                         <div class="one">
                         {{item.upCounter}}<i class="bi bi-hand-thumbs-up" (click)="upVote(i)"></i>
@@ -42,7 +41,7 @@
                         <div class="two">
                             <button (click)="deleteQuote(i)"><i class="bi bi-trash"></i></button>
                         </div>
-                       </div> -->
+                       </div> 
 
                        <!-- <small> posted on {{item.datePosted|date :'short'}} <br> {{item.datePosted|dateCount :'short'}} days ago</small> -->
                                               
@@ -50,13 +49,12 @@
 
                        
                 </ul>
-            <!-- </div> -->
 
    
-       <!-- </div> -->
+       </div>
 
-       <!-- <div class="col-6 col-md-6" class="form" *ngIf="toDisplay"> -->
-        <!-- <app-forms (customQuote)="customQuote($event)" ></app-forms> -->
+       <div class="col-6 col-md-6" class="form" *ngIf="toDisplay"> 
+         <app-form  (customQuote)="customQuote($event)" ></app-form>
     
     </div>
 </div>

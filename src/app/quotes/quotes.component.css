@@ -6,10 +6,7 @@
 
 }
 
-.highlight{
-    background-color: red;
-    color:burlywood
-}
+
 
 .quotes{
     
@@ -34,6 +31,7 @@ li{
     animation:shadows 2s linear infinite alternate;
     height: 75vh;
     width: 40%;
+    background-color: red;
 }
 
 @keyframes shadows {
@@ -72,7 +70,7 @@ li{
 }
 
 .one{
-    splay: flex;
+    display: flex;
     justify-content: space-between;
 }
 
