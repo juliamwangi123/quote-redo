@@ -43,8 +43,7 @@
                         </div>
                        </div> 
 
-                       <small> posted by: {{item.publisher}} on {{item.datePosted|date :'short'}} <br> </small>
-                       <!-- {{item.datePosted|dateCount :'short'}} days ago -->
+                       <small> posted by: {{item.publisher}} {{item.datePosted|date :'short'}}  <br> {{item.datePosted|dateCount }} days ago </small>
                                               
 
 
